@@ -48,8 +48,8 @@ kaniko:
       }
     }" > /kaniko/.docker/config.json
   - /kaniko/executor --build-arg="ANSIBLE_VERSION=${ANSIBLE_VERSION}" --build-arg="OPENSSH_VERSION=${OPENSSH_VERSION}" --build-arg="OPENSSL_VERSION=${OPENSSL_VERSION}" --context="${CI_PROJECT_DIR}" --destination="${CI_REGISTRY_IMAGE}:${RSYNC_VERSION%-*}-alpine${ALPINE_VERSION}-${CI_PIPELINE_IID}" --destination="${DOCKER_HUB_IMAGE}:${RSYNC_VERSION%-*}-alpine${ALPINE_VERSION}-${CI_PIPELINE_IID}" --dockerfile="${CI_PROJECT_DIR}/Dockerfile"
-  - echo "Successfully published new image ${CI_REGISTRY_IMAGE}:${RSYNC_VERSION%-*}-alpine${ALPINE_VERSION}-${CI_PIPELINE_IID}"
-  - echo "Successfully published new image ${DOCKER_HUB_IMAGE}:${RSYNC_VERSION%-*}-alpine${ALPINE_VERSION}-${CI_PIPELINE_IID}"
+  - echo "Successfully published new image ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION%-*}-alpine${ALPINE_VERSION}-${CI_PIPELINE_IID}"
+  - echo "Successfully published new image ${DOCKER_HUB_IMAGE}:${ANSIBLE_VERSION%-*}-alpine${ALPINE_VERSION}-${CI_PIPELINE_IID}"
   stage: build
   tags:
   - kubernetes
