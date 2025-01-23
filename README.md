@@ -1,6 +1,6 @@
 # Ansible
 
-Simple Ansible docker image.
+Simple docker image for Ansible without any bloat, built on the official python3 image.
 
 ## Usage
 
