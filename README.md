@@ -5,11 +5,11 @@ Simple docker image for Ansible without any bloat, built on the official python3
 ## Usage
 
 ```sh
-docker run --rm registry.gitlab.jmk.hu/admin/ansible:<VERSION>
+docker run --rm ghudiczius/ansible:<VERSION>
 ```
 
 or
 
 ```sh
-docker run --rm ghudiczius/admin/ansible:<VERSION>
+docker run --rm registry.gitlab.jmk.hu/admin/ansible:<VERSION>
 ```
