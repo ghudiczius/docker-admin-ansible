@@ -2,12 +2,12 @@
 variables:
   DOCKER_HUB_IMAGE: "${DOCKER_HUB_USERNAME}/${CI_PROJECT_NAME}"
   # renovate: datasource=docker depName=alpine
-  ALPINE_VERSION: "3.21.3"
-  # renovate: datasource=repology depName=alpine_3_21/ansible versioning=loose
+  ALPINE_VERSION: "3.22.0"
+  # renovate: datasource=repology depName=alpine_3_22/ansible versioning=loose
   ANSIBLE_VERSION: "11.1.0-r0"
-  # renovate: datasource=repology depName=alpine_3_21/openssh versioning=loose
+  # renovate: datasource=repology depName=alpine_3_22/openssh versioning=loose
   OPENSSH_VERSION: "9.9_p2-r0"
-  # renovate: datasource=repology depName=alpine_3_21/openssl versioning=loose
+  # renovate: datasource=repology depName=alpine_3_22/openssl versioning=loose
   OPENSSL_VERSION: "3.3.3-r0"
 
 workflow:
