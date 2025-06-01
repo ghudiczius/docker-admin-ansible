@@ -6,7 +6,7 @@ variables:
   # renovate: datasource=repology depName=alpine_3_22/ansible versioning=loose
   ANSIBLE_VERSION: "11.6.0-r0"
   # renovate: datasource=repology depName=alpine_3_22/openssh versioning=loose
-  OPENSSH_VERSION: "9.9_p2-r0"
+  OPENSSH_VERSION: "10.0_p1-r7"
   # renovate: datasource=repology depName=alpine_3_22/openssl versioning=loose
   OPENSSL_VERSION: "3.5.0-r0"
 
