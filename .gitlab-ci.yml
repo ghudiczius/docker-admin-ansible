@@ -8,7 +8,7 @@ variables:
   # renovate: datasource=repology depName=alpine_3_22/openssh versioning=loose
   OPENSSH_VERSION: "10.0_p1-r7"
   # renovate: datasource=repology depName=alpine_3_22/openssl versioning=loose
-  OPENSSL_VERSION: "3.5.1-r0"
+  OPENSSL_VERSION: "3.5.2-r0"
 
 workflow:
   rules:
